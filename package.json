@@ -1,0 +1,20 @@
+{
+  "name": "nts-product-recommendation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "NTS Product Recommendator - Find the best Nutri-Tech Solutions fertilizer products for your needs",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.6.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "vite": "^4.0.0"
+  }
+}
