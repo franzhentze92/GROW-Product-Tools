@@ -37,7 +37,7 @@ export const enhancedMicrobeProducts = [
     "soil": "1–2 L/ha as required"
   },
   "link": "https://nutri-tech.com.au/products/b-sub",
-  "image": "/src/assets/b-sub.webp"
+  "image": "/b-sub.webp"
 },
 {
   "product_name": "Nutri‑Life BAM™",
@@ -95,7 +95,7 @@ export const enhancedMicrobeProducts = [
     "seedling_treatment": "5 L/tonne seed (max 12 L/tonne including Seed‑Start)"
   },
   "link": "https://nutri-tech.com.au/products/nutri-life-bam",
-  "image": "/src/assets/Nutri-LifeBAM20L.webp"
+  "image": "/Nutri-LifeBAM20L.webp"
 },
 {
   "product_name": "Nutri‑Life Bio‑N™",
@@ -132,7 +132,7 @@ export const enhancedMicrobeProducts = [
     "seedling_treatment": "Dip seedlings in 1 mL per L solution just before planting"
   },
   "link": "https://nutri-tech.com.au/products/bio-n",
-  "image": "/src/assets/Nutri-LifeBio-N5L.webp"
+  "image": "/Nutri-LifeBio-N5L.webp"
 },
 {
   "product_name": "Nutri‑Life Bio‑Plex™",
@@ -169,7 +169,7 @@ export const enhancedMicrobeProducts = [
     "seedling_treatment": "Dip seedlings in 1 mL per L solution before planting"
   },
   "link": "https://nutri-tech.com.au/products/bio-plex",
-  "image": "/src/assets/Nutri-LifeBio-Plex5L.webp"
+  "image": "/Nutri-LifeBio-Plex5L.webp"
 },
 {
   "product_name": "Nutri‑Life Bio‑P™",
@@ -205,7 +205,7 @@ export const enhancedMicrobeProducts = [
     "foliar": "100 mL/100 L water (up to 400 mL/ha) every 2–4 weeks"
   },
   "link": "https://nutri-tech.com.au/products/bio-p",
-  "image": "/src/assets/Nutri-LifeBio-P5L_11109878-ee20-4f0c-b071-ca0d55fc945a.webp"
+  "image": "/Nutri-LifeBio-P5L_11109878-ee20-4f0c-b071-ca0d55fc945a.webp"
 },
 {
   "product_name": "Nutri‑Life Micro‑Force™",
@@ -250,7 +250,7 @@ export const enhancedMicrobeProducts = [
     }
   },
   "link": "https://nutri-tech.com.au/products/micro-force",
-  "image": "/src/assets/Nutri-LifeMicro-Force20kg.webp"
+  "image": "/Nutri-LifeMicro-Force20kg.webp"
 },
 {
   "product_name": "Nutri‑Life Myco‑Force™",
@@ -288,7 +288,7 @@ export const enhancedMicrobeProducts = [
     "seedling_treatment": "1 kg slurry per 10 L water as soil drench pre-plant"
   },
   "link": "https://nutri-tech.com.au/products/myco-force",
-  "image": "/src/assets/Nutri-LifeMyco-Force5kg.webp"
+  "image": "/Nutri-LifeMyco-Force5kg.webp"
 },
 {
   "product_name": "Nutri‑Life Platform®",
@@ -347,7 +347,7 @@ export const enhancedMicrobeProducts = [
     "liquid_inject": "50–100 g/ha"
   },
   "link": "https://nutri-tech.com.au/products/platform",
-  "image": "/src/assets/Platform_1Kg_03122024.webp"
+  "image": "/Platform_1Kg_03122024.webp"
 },
 {
   "product_name": "Nutri‑Life Root‑Guard™",
@@ -383,7 +383,7 @@ export const enhancedMicrobeProducts = [
     "seedling_treatment": "Slurry with 1 kg per 10 L water; drench at transplant"
   },
   "link": "https://nutri-tech.com.au/products/root-guard",
-  "image": "/src/assets/Nutri-LifeRoot-Guard5kg_63a9e3d1-daed-420e-ba4c-70d41fc8ad3e.webp"
+  "image": "/Nutri-LifeRoot-Guard5kg_63a9e3d1-daed-420e-ba4c-70d41fc8ad3e.webp"
 },
 {
   "product_name": "Nutri‑Life Sudo‑Shield™",
@@ -421,8 +421,8 @@ export const enhancedMicrobeProducts = [
     "seed_treatment_broadacre": "2 kg/tonne seed",
     "cuttings_treatment": "10 g/L dip pre‑plant"
   },
-  "link": "https://nutri-tech.com.au/products/nutri-life-sudo-shield",
-  "image": "/src/assets/Sudo-Shield_5kg_FEB25.webp"
+  "link": "https://nutri-tech.com.au/products/sudo-shield",
+  "image": "/Sudo-Shield_5kg_FEB25.webp"
 },
 {
   "product_name": "Nutri‑Life Tricho‑Shield™",
@@ -459,6 +459,6 @@ export const enhancedMicrobeProducts = [
     "cuttings_treatment": "10 g/L dip before planting"
   },
   "link": "https://nutri-tech.com.au/products/tricho-shield",
-  "image": "/src/assets/Nutri-LifeTricho-Shield1kg.webp"
+  "image": "/Nutri-LifeTricho-Shield1kg.webp"
 }
 ]; 

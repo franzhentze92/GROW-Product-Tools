@@ -564,7 +564,7 @@ function EnhancedRecommendations({ selectedBenefits, applicationMethod, productF
             >
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
                 <img
-                  src={product.image.replace('/src', '')}
+                  src={product.image}
                   alt={product.product_name}
                   style={{
                     width: '80px',
