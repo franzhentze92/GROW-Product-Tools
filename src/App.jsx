@@ -84,30 +84,26 @@ function MainLandingPage() {
             (Coming Soon)
           </span>
         </div>
-        <button
-          onClick={() => navigate('/compatibility')}
-          style={{
-            padding: '1rem 1.2rem',
-            borderRadius: 16,
-            border: '2px solid #e0e0e0',
-            background: '#f7faef',
-            color: MAIN_GREEN,
-            fontWeight: 700,
-            fontSize: '1.1rem',
-            cursor: 'pointer',
-            boxShadow: '0 2px 12px #8cb43a11',
-            transition: 'box-shadow 0.2s, border 0.2s',
-          }}
-          onMouseOver={e => e.currentTarget.style.boxShadow = '0 4px 24px #8cb43a33'}
-          onMouseOut={e => e.currentTarget.style.boxShadow = '0 2px 12px #8cb43a11'}
-        >
+        <div style={{
+          padding: '1rem 1.2rem',
+          borderRadius: 16,
+          border: '2px solid #e0e0e0',
+          background: '#f7faef',
+          color: MAIN_GREEN,
+          fontWeight: 700,
+          fontSize: '1.1rem',
+          cursor: 'not-allowed',
+          boxShadow: '0 2px 12px #8cb43a11',
+          transition: 'box-shadow 0.2s, border 0.2s',
+          opacity: 0.6,
+        }}>
           🔬 Product Compatibility<br />
           <span style={{ fontWeight: 400, color: '#444', fontSize: '0.98rem' }}>Check if products can be safely mixed together</span>
           <br />
-          <span style={{ fontWeight: 700, color: '#ff9800', fontSize: '0.95rem', marginTop: '0.5rem', display: 'inline-block' }}>
-            (Beta Mode)
+          <span style={{ fontWeight: 700, color: '#8cb43a', fontSize: '0.95rem', marginTop: '0.5rem', display: 'inline-block' }}>
+            (Coming Soon)
           </span>
-        </button>
+        </div>
       </div>
     </div>
   );
