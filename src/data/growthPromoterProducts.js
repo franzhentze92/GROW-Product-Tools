@@ -16,7 +16,7 @@ export const growthPromoterProducts = [
     ],
     "description": "High-quality fulvic acid concentrate designed to enhance nutrient transport, cellular absorption, and stress tolerance in plants.",
     "link": "https://nutri-tech.com.au/products/fulvic-plus",
-    "image": "/src/assets/fulvic-plus.webp"
+    "image": "/assets/fulvic-plus.webp"
   },
   {
     "product_name": "Nutri‑Life Humic Gold™",
@@ -35,7 +35,7 @@ export const growthPromoterProducts = [
     ],
     "description": "Premium humic acid formulation that improves soil structure, nutrient retention, and root development for optimal plant growth.",
     "link": "https://nutri-tech.com.au/products/humic-gold",
-    "image": "/src/assets/humic-gold.webp"
+    "image": "/assets/humic-gold.webp"
   },
   {
     "product_name": "Nutri‑Life Amino Boost™",
@@ -54,7 +54,7 @@ export const growthPromoterProducts = [
     ],
     "description": "Complete amino acid blend that enhances protein synthesis, enzyme activity, and stress recovery for improved plant performance.",
     "link": "https://nutri-tech.com.au/products/amino-boost",
-    "image": "/src/assets/amino-boost.webp"
+    "image": "/assets/amino-boost.webp"
   },
   {
     "product_name": "Nutri‑Life Bio‑Stim Complete™",
@@ -73,7 +73,7 @@ export const growthPromoterProducts = [
     ],
     "description": "Complete biostimulant blend combining fulvic acid, humic acid, and amino acids for comprehensive plant growth enhancement.",
     "link": "https://nutri-tech.com.au/products/bio-stim-complete",
-    "image": "/src/assets/bio-stim-complete.webp"
+    "image": "/assets/bio-stim-complete.webp"
   },
   {
     "product_name": "Nutri‑Life Root Stim™",
@@ -91,7 +91,7 @@ export const growthPromoterProducts = [
     ],
     "description": "Specialized root development formula combining fulvic acid and amino acids to enhance root growth and nutrient absorption.",
     "link": "https://nutri-tech.com.au/products/root-stim",
-    "image": "/src/assets/root-stim.webp"
+    "image": "/assets/root-stim.webp"
   },
   {
     "product_name": "Nutri‑Life Foliar Boost™",
@@ -109,7 +109,7 @@ export const growthPromoterProducts = [
     ],
     "description": "Advanced foliar biostimulant that enhances nutrient absorption, chlorophyll production, and overall plant performance.",
     "link": "https://nutri-tech.com.au/products/foliar-boost",
-    "image": "/src/assets/foliar-boost.webp"
+    "image": "/assets/foliar-boost.webp"
   },
   {
     "product_name": "Nutri‑Life Stress Guard™",
@@ -127,7 +127,7 @@ export const growthPromoterProducts = [
     ],
     "description": "Specialized stress management formula that helps plants cope with environmental stresses and recover more quickly.",
     "link": "https://nutri-tech.com.au/products/stress-guard",
-    "image": "/src/assets/stress-guard.webp"
+    "image": "/assets/stress-guard.webp"
   },
   {
     "product_name": "Nutri‑Life Quality Plus™",
@@ -145,6 +145,6 @@ export const growthPromoterProducts = [
     ],
     "description": "Quality enhancement formula that improves crop appearance, flavor, nutritional content, and market value.",
     "link": "https://nutri-tech.com.au/products/quality-plus",
-    "image": "/src/assets/quality-plus.webp"
+    "image": "/assets/quality-plus.webp"
   }
 ]; 

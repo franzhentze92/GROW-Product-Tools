@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { enhancedMicrobeProducts } from '../data/enhancedMicrobeProducts';
 import { enhancedMicrobeRecommendationLogic } from '../data/enhancedRecommendationLogic';
 import { benefits } from '../data/benefits';
+import imageMappingService from '../services/imageMappingService';
 
 const MAIN_GREEN = '#8cb43a';
 
 function EnhancedMicrobeTool() {
+  const navigate = useNavigate();
   // Step state
   const [step, setStep] = useState(1);
   // User selections
@@ -18,6 +21,24 @@ function EnhancedMicrobeTool() {
   const [pathogenScope, setPathogenScope] = useState('');
   const [pathogenTypes, setPathogenTypes] = useState([]);
   const [insectTypes, setInsectTypes] = useState([]);
+  const [recommendations, setRecommendations] = useState([]);
+  const [imageServiceInitialized, setImageServiceInitialized] = useState(false);
+
+  useEffect(() => {
+    const initializeImageService = async () => {
+      await imageMappingService.initialize();
+      setImageServiceInitialized(true);
+    };
+    initializeImageService();
+  }, []);
+
+  // Helper function to get the correct image path for a product
+  const getProductImage = (product) => {
+    if (!imageServiceInitialized) {
+      return product.image || '/assets/default-product.webp';
+    }
+    return imageMappingService.getImagePath(product.image || product.product_name);
+  };
 
   // Debug: log current step and state
   console.log('Current step:', step, 'showPathogen:', showPathogen, 'showInsect:', showInsect, 'selectedBenefits:', selectedBenefits, 'applicationMethod:', applicationMethod, 'pathogenScope:', pathogenScope, 'pathogenTypes:', pathogenTypes, 'insectTypes:', insectTypes);
@@ -134,7 +155,7 @@ function EnhancedMicrobeTool() {
 
   // UI
   return (
-    <div>
+    <div style={{ maxWidth: 1200, margin: '0 auto', padding: '2rem', background: '#f5f6f7', minHeight: '100vh' }}>
       <div className="card">
         {step === 1 && (
           <div style={{ textAlign: 'center', padding: '2.5rem 1rem' }}>
@@ -555,23 +576,21 @@ function EnhancedRecommendations({ selectedBenefits, applicationMethod, productF
             <div
               key={index}
               style={{
-                border: '1px solid #ddd',
-                borderRadius: '12px',
-                padding: '1.5rem',
-                background: '#fff',
-                boxShadow: '0 2px 8px rgba(0,0,0,0.1)'
+                border: '1px solid #e0e0e0',
+                borderRadius: 8,
+                margin: '1.2rem 0',
+                padding: '1rem',
+                background: '#fafcf7'
               }}
             >
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem' }}>
-                <img
-                  src={product.image}
-                  alt={product.product_name}
-                  style={{
-                    width: '80px',
-                    height: '80px',
-                    objectFit: 'cover',
-                    borderRadius: '8px',
-                    border: '1px solid #eee'
+              <div style={{ fontWeight: 700, fontSize: '1.1rem', color: MAIN_GREEN }}>{product.product_name}</div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 16, margin: '0.5rem 0' }}>
+                <img 
+                  src={getProductImage(product)} 
+                  alt={product.product_name} 
+                  style={{ maxWidth: 120, maxHeight: 120, margin: '0.5rem 0', borderRadius: 6, background: '#fff', objectFit: 'contain' }}
+                  onError={(e) => {
+                    e.target.src = '/assets/default-product.webp';
                   }}
                 />
                 <div style={{ flex: 1 }}>

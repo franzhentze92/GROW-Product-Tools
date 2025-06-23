@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-route
 import EnhancedMicrobeTool from './components/EnhancedMicrobeTool';
 import GrowthPromotersTool from './components/GrowthPromotersTool';
 import AIRecommendationTool from './components/AIRecommendationTool';
+import ProductCompatibilityTool from './components/ProductCompatibilityTool';
 import { fertilizerProducts } from './data/fertilizerProducts';
 
 const MAIN_GREEN = '#8cb43a';
@@ -72,6 +73,25 @@ function MainLandingPage() {
           onMouseOut={e => e.currentTarget.style.boxShadow = '0 2px 12px #8cb43a11'}
         >
           🌾 Fertilisers<br /><span style={{ fontWeight: 400, color: '#444', fontSize: '1.05rem' }}>Find the best NTS fertiliser products for your needs</span>
+        </button>
+        <button
+          onClick={() => navigate('/compatibility')}
+          style={{
+            padding: '2rem',
+            borderRadius: 16,
+            border: '2px solid #e0e0e0',
+            background: '#f7faef',
+            color: MAIN_GREEN,
+            fontWeight: 700,
+            fontSize: '1.25rem',
+            cursor: 'pointer',
+            boxShadow: '0 2px 12px #8cb43a11',
+            transition: 'box-shadow 0.2s, border 0.2s',
+          }}
+          onMouseOver={e => e.currentTarget.style.boxShadow = '0 4px 24px #8cb43a33'}
+          onMouseOut={e => e.currentTarget.style.boxShadow = '0 2px 12px #8cb43a11'}
+        >
+          🔬 Product Compatibility<br /><span style={{ fontWeight: 400, color: '#444', fontSize: '1.05rem' }}>Check if NTS products can be safely mixed together</span>
         </button>
       </div>
     </div>
@@ -316,6 +336,7 @@ function App() {
           <Route path="/microbes" element={<EnhancedMicrobeTool />} />
           <Route path="/growth-promoters" element={<GrowthPromotersTool />} />
           <Route path="/fertilisers" element={<FertiliserTool />} />
+          <Route path="/compatibility" element={<ProductCompatibilityTool />} />
         </Routes>
       </div>
     </Router>

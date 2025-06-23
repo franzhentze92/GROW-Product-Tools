@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import EnhancedMicrobeTool from './components/EnhancedMicrobeTool';
 import GrowthPromotersTool from './components/GrowthPromotersTool';
+import ProductCompatibilityTool from './components/ProductCompatibilityTool';
 import { fertilizerProducts } from './data/fertilizerProducts';
 import { nutrients, nutrientCombinations } from './data/nutrients';
 import { applicationMethods } from './data/applicationMethods';
@@ -37,6 +38,27 @@ function MainLandingPage() {
         >
           🦠 Microbes<br /><span style={{ fontWeight: 400, color: '#444', fontSize: '1.05rem' }}>Find the best microbial products for your crop or soil</span>
         </button>
+        
+        <button
+          onClick={() => navigate('/compatibility')}
+          style={{
+            padding: '2rem',
+            borderRadius: 16,
+            border: '2px solid #e0e0e0',
+            background: '#f7faef',
+            color: MAIN_GREEN,
+            fontWeight: 700,
+            fontSize: '1.25rem',
+            cursor: 'pointer',
+            boxShadow: '0 2px 12px #8cb43a11',
+            transition: 'box-shadow 0.2s, border 0.2s',
+          }}
+          onMouseOver={e => e.currentTarget.style.boxShadow = '0 4px 24px #8cb43a33'}
+          onMouseOut={e => e.currentTarget.style.boxShadow = '0 2px 12px #8cb43a11'}
+        >
+          🔬 Product Compatibility<br /><span style={{ fontWeight: 400, color: '#444', fontSize: '1.05rem' }}>Check if products can be safely mixed together</span>
+        </button>
+        
         <div style={{
           padding: '2rem',
           borderRadius: 16,
@@ -707,6 +729,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainLandingPage />} />
         <Route path="/microbes" element={<EnhancedMicrobeTool />} />
+        <Route path="/compatibility" element={<ProductCompatibilityTool />} />
         <Route path="/growth-promoters" element={<GrowthPromotersTool />} />
         <Route path="/fertilisers" element={<FertiliserTool />} />
       </Routes>

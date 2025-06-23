@@ -14,7 +14,7 @@ export const fertilizerProducts = [
       "Suitable for all crop stages"
     ],
     "link": "https://nutri-tech.com.au/products/calcium-plus",
-    "image": "/src/assets/calcium-plus.webp"
+    "image": "/assets/calcium-plus.webp"
   },
   {
     "product_name": "Nutri-Life Nitrogen Boost",
@@ -31,7 +31,7 @@ export const fertilizerProducts = [
       "Quick absorption through foliar application"
     ],
     "link": "https://nutri-tech.com.au/products/nitrogen-boost",
-    "image": "/src/assets/nitrogen-boost.webp"
+    "image": "/assets/nitrogen-boost.webp"
   },
   {
     "product_name": "Nutri-Life Phosphorus Power",
@@ -48,7 +48,7 @@ export const fertilizerProducts = [
       "Ideal for transplanting and early growth"
     ],
     "link": "https://nutri-tech.com.au/products/phosphorus-power",
-    "image": "/src/assets/phosphorus-power.webp"
+    "image": "/assets/phosphorus-power.webp"
   },
   {
     "product_name": "Nutri-Life Complete NPK",
@@ -65,7 +65,7 @@ export const fertilizerProducts = [
       "Versatile application methods"
     ],
     "link": "https://nutri-tech.com.au/products/complete-npk",
-    "image": "/src/assets/complete-npk.webp"
+    "image": "/assets/complete-npk.webp"
   },
   {
     "product_name": "Nutri-Life Micronutrient Mix",
@@ -82,7 +82,7 @@ export const fertilizerProducts = [
       "Quick foliar absorption"
     ],
     "link": "https://nutri-tech.com.au/products/micronutrient-mix",
-    "image": "/src/assets/micronutrient-mix.webp"
+    "image": "/assets/micronutrient-mix.webp"
   },
   {
     "product_name": "Nutri-Life Potassium Plus",
@@ -99,7 +99,7 @@ export const fertilizerProducts = [
       "Improves water regulation"
     ],
     "link": "https://nutri-tech.com.au/products/potassium-plus",
-    "image": "/src/assets/potassium-plus.webp"
+    "image": "/assets/potassium-plus.webp"
   },
   {
     "product_name": "Nutri-Life Seed Starter",
@@ -116,7 +116,7 @@ export const fertilizerProducts = [
       "Supports uniform establishment"
     ],
     "link": "https://nutri-tech.com.au/products/seed-starter",
-    "image": "/src/assets/seed-starter.webp"
+    "image": "/assets/seed-starter.webp"
   },
   {
     "product_name": "Nutri-Life Hydroponic Blend",
@@ -133,7 +133,7 @@ export const fertilizerProducts = [
       "Easy to use and monitor"
     ],
     "link": "https://nutri-tech.com.au/products/hydroponic-blend",
-    "image": "/src/assets/hydroponic-blend.webp"
+    "image": "/assets/hydroponic-blend.webp"
   },
   {
     "product_name": "Nutri-Life Compost Enhancer",
@@ -150,7 +150,7 @@ export const fertilizerProducts = [
       "Reduces composting time"
     ],
     "link": "https://nutri-tech.com.au/products/compost-enhancer",
-    "image": "/src/assets/compost-enhancer.webp"
+    "image": "/assets/compost-enhancer.webp"
   },
   {
     "product_name": "Nutri-Life Foliar Complete",
@@ -167,6 +167,6 @@ export const fertilizerProducts = [
       "Enhances yield and quality"
     ],
     "link": "https://nutri-tech.com.au/products/foliar-complete",
-    "image": "/src/assets/foliar-complete.webp"
+    "image": "/assets/foliar-complete.webp"
   }
 ]; 

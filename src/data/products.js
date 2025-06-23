@@ -17,7 +17,7 @@ export const products = [
     ],
     "description": "Selected Bacillus subtilis strain with activator powder designed to boost growth, nutrient availability, resilience, rhizosphere balance, and natural immunity.",
     "link": "https://nutri-tech.com.au/products/b-sub",
-    "image": "/src/assets/b-sub.webp"
+    "image": "/assets/b-sub.webp"
   },
   {
     "product_name": "Nutri‑Life BAM™",
@@ -50,7 +50,7 @@ export const products = [
     ],
     "description": "Anaerobic microbial blend optimized for soil, foliar, or compost — accelerates residue breakdown, boosts nutrient cycling and availability, resilience, and biological balance.",
     "link": "https://nutri-tech.com.au/products/nutri-life-bam",
-    "image": "/src/assets/Nutri-LifeBAM20L.webp"
+    "image": "/assets/Nutri-LifeBAM20L.webp"
   },
   {
     "product_name": "Nutri‑Life Bio‑N™",
@@ -70,7 +70,7 @@ export const products = [
     ],
     "description": "Azotobacter vinelandii inoculant supplying nitrogen fixation, growth hormones, root/seedling support, moisture retention, P mobilization, and rhizosphere balance.",
     "link": "https://nutri-tech.com.au/products/bio-n",
-    "image": "/src/assets/Nutri-LifeBio-N5L.webp"
+    "image": "/assets/Nutri-LifeBio-N5L.webp"
   },
   {
     "product_name": "Nutri‑Life Micro‑Force™",
@@ -91,7 +91,7 @@ export const products = [
     ],
     "description": "Bacillus-dominant blend designed for on-farm brewing to boost nutrient cycling, root growth, resilience, hormone production, and rhizosphere balance.",
     "link": "https://nutri-tech.com.au/products/micro-force",
-    "image": "/src/assets/Nutri-LifeMicro-Force20kg.webp"
+    "image": "/assets/Nutri-LifeMicro-Force20kg.webp"
   },
   {
     "product_name": "Nutri‑Life Bio‑P™",
@@ -107,7 +107,7 @@ export const products = [
     ],
     "description": "Bacillus spp. inoculant to unlock locked‑up soil phosphate reserves, enhancing root growth, sugar levels, quality, and yield.",
     "link": "https://nutri-tech.com.au/products/bio-p",
-    "image": "/src/assets/Nutri-LifeBio-P5L_11109878-ee20-4f0c-b071-ca0d55fc945a.webp"
+    "image": "/assets/Nutri-LifeBio-P5L_11109878-ee20-4f0c-b071-ca0d55fc945a.webp"
   },
   {
     "product_name": "Nutri‑Life Bio‑Plex™",
@@ -126,7 +126,7 @@ export const products = [
     ],
     "description": "Foliar inoculum combining N‑fixing Azotobacter and Bacillus for hormone and vitamin production, phosphorus availability, immunity, quality, and balance.",
     "link": "https://nutri-tech.com.au/products/bio-plex",
-    "image": "/src/assets/Nutri-LifeBio-Plex5L.webp"
+    "image": "/assets/Nutri-LifeBio-Plex5L.webp"
   },
   {
     "product_name": "Nutri‑Life Platform®",
@@ -157,7 +157,7 @@ export const products = [
     ],
     "description": "Multi‑species seed/soil inoculant combining mycorrhizal fungi with beneficial bacteria to expand root zone, unlock nutrients (NPK + micronutrients), support hormones, resilience, and microbial balance.",
     "link": "https://nutri-tech.com.au/products/platform",
-    "image": "/src/assets/Platform_1Kg_03122024.webp"
+    "image": "/assets/Platform_1Kg_03122024.webp"
   },
   {
     "product_name": "Nutri‑Life Tricho‑Shield™",
@@ -176,7 +176,7 @@ export const products = [
     ],
     "description": "Talc-based Trichoderma blend to enhance growth, root development, immunity, microbial balance, and disease suppression throughout the crop cycle.",
     "link": "https://nutri-tech.com.au/products/tricho-shield",
-    "image": "/src/assets/Nutri-LifeTricho-Shield1kg.webp"
+    "image": "/assets/Nutri-LifeTricho-Shield1kg.webp"
   },
   {
     "product_name": "Nutri‑Life Myco‑Force™",
@@ -194,7 +194,7 @@ export const products = [
     ],
     "description": "Talc‑based entomopathogenic fungal blend to restore beneficial fungal populations, aid insect‑damage recovery, and support microbial balance.",
     "link": "https://nutri-tech.com.au/products/myco-force",
-    "image": "/src/assets/Nutri-LifeMyco-Force5kg.webp"
+    "image": "/assets/Nutri-LifeMyco-Force5kg.webp"
   },
   {
     "product_name": "Nutri‑Life Root‑Guard™",
@@ -212,7 +212,7 @@ export const products = [
     ],
     "description": "Talc‑based Trichoderma formulation to restore root‑zone microbial balance, suppress pathogens, and support plant growth across all stages.",
     "link": "https://nutri-tech.com.au/products/root-guard",
-    "image": "/src/assets/Nutri-LifeRoot-Guard5kg_63a9e3d1-daed-420e-ba4c-70d41fc8ad3e.webp"
+    "image": "/assets/Nutri-LifeRoot-Guard5kg_63a9e3d1-daed-420e-ba4c-70d41fc8ad3e.webp"
   },
   {
     "product_name": "Nutri‑Life Sudo‑Shield™",
@@ -234,6 +234,6 @@ export const products = [
     ],
     "description": "Talc‑based Pseudomonas fluorescens inoculant for pathogen‑damaged soils, silica/phosphorus solubilization, frost protection, stress resilience, and microbial recovery.",
     "link": "https://nutri-tech.com.au/products/nutri-life-sudo-shield",
-    "image": "/src/assets/Sudo-Shield_5kg_FEB25.webp"
+    "image": "/assets/Sudo-Shield_5kg_FEB25.webp"
   }
 ]; 

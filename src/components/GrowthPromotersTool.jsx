@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { growthPromoterProducts } from '../data/growthPromoterProducts';
 import { growthPromoterBenefits } from '../data/growthPromoterBenefits';
 import { growthPromoterTypes } from '../data/growthPromoterTypes';
+import imageMappingService from '../services/imageMappingService';
 
 const MAIN_GREEN = '#8cb43a';
 
@@ -17,6 +18,23 @@ function GrowthPromotersTool() {
   const [applicationMethod, setApplicationMethod] = useState('');
   const [productForm, setProductForm] = useState('');
   const [organicPreference, setOrganicPreference] = useState('');
+  const [imageServiceInitialized, setImageServiceInitialized] = useState(false);
+
+  useEffect(() => {
+    const initializeImageService = async () => {
+      await imageMappingService.initialize();
+      setImageServiceInitialized(true);
+    };
+    initializeImageService();
+  }, []);
+
+  // Helper function to get the correct image path for a product
+  const getProductImage = (product) => {
+    if (!imageServiceInitialized) {
+      return product.image || '/assets/default-product.webp';
+    }
+    return imageMappingService.getImagePath(product.image || product.product_name);
+  };
 
   // Debug: log current step and state
   console.log('Current step:', step, 'selectedBenefits:', selectedBenefits, 'applicationMethod:', applicationMethod, 'productForm:', productForm, 'organicPreference:', organicPreference);
@@ -367,7 +385,7 @@ function GrowthPromoterRecommendations({ selectedBenefits, applicationMethod, pr
           <div key={product.product_name} style={{ border: '1px solid #e0e0e0', borderRadius: 8, margin: '1.2rem 0', padding: '1rem', background: '#fafcf7' }}>
             <div style={{ fontWeight: 700, fontSize: '1.1rem', color: MAIN_GREEN }}>{product.product_name}</div>
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, margin: '0.5rem 0' }}>
-              <img src={product.image} alt={product.product_name} style={{ maxWidth: 120, maxHeight: 120, margin: '0.5rem 0', borderRadius: 6, background: '#fff', objectFit: 'contain' }} />
+              <img src={getProductImage(product)} alt={product.product_name} style={{ maxWidth: 120, maxHeight: 120, margin: '0.5rem 0', borderRadius: 6, background: '#fff', objectFit: 'contain' }} />
               <div>
                 <a href={product.link} target="_blank" rel="noopener noreferrer" style={{ color: MAIN_GREEN, fontWeight: 600, textDecoration: 'underline', marginRight: 12 }}>Product Page</a>
               </div>
