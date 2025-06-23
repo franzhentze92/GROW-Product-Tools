@@ -1,3 +1,4 @@
+// Last updated: 2024-06-24
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import EnhancedMicrobeTool from './components/EnhancedMicrobeTool';

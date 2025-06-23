@@ -421,7 +421,7 @@ export const enhancedMicrobeProducts = [
     "seed_treatment_broadacre": "2 kg/tonne seed",
     "cuttings_treatment": "10 g/L dip pre‑plant"
   },
-  "link": "https://nutri-tech.com.au/products/sudo-shield",
+  "link": "https://nutri-tech.com.au/products/nutri-life-sudo-shield",
   "image": "/Sudo-Shield_5kg_FEB25.webp"
 },
 {

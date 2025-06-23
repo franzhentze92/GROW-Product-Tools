@@ -12,7 +12,7 @@ A React-based web application that helps users find the best Nutri-Tech Solution
 
 ## Getting Started
 
-### Prerequisites
+### Prerequisites:
 
 - Node.js (version 14 or higher)
 - npm or yarn
@@ -79,4 +79,6 @@ This project is designed to help users find the most suitable NTS fertilizer pro
 
 ## License
 
-This project is part of the Smart Tools collection and is designed for educational and practical use in agricultural product selection. 
+This project is part of the Smart Tools collection and is designed for educational and practical use in agricultural product selection.
+
+<!-- Last updated: 2024-06-24 --> 
