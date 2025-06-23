@@ -22,7 +22,6 @@ export const benefits = [
   { name: "Expands root zone via AMF colonization and glomalin production", description: "Expands root zone via AMF colonization and glomalin production" },
   { name: "Pathogen suppression", description: "Pathogen suppression" },
   { name: "Insect pest biocontrol", description: "Insect pest biocontrol" },
-  { name: "Provides frost protection through elimination of ice‑nucleating pathogens", description: "Provides frost protection through elimination of ice‑nucleating pathogens" },
   { name: "Plant growth promotion via enzyme and phytohormone production", description: "Plant growth promotion via enzyme and phytohormone production" },
   { name: "Acts as a rescue remedy for degraded or disease‑prone soils", description: "Acts as a rescue remedy for degraded or disease‑prone soils" },
   { name: "Frost protection by eliminating ice-nucleating bacteria", description: "Frost protection by eliminating ice-nucleating bacteria" },

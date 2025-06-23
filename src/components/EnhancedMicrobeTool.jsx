@@ -541,6 +541,7 @@ function EnhancedMicrobeTool() {
             insectTypes={insectTypes}
             products={getRecommendations()}
             onBack={prevStep}
+            getProductImage={getProductImage}
           />
         )}
       </div>
@@ -548,7 +549,7 @@ function EnhancedMicrobeTool() {
   );
 }
 
-function EnhancedRecommendations({ selectedBenefits, applicationMethod, productFormPreference, organicCertifiedPreference, products, onBack, pathogenTypes = [], insectTypes = [] }) {
+function EnhancedRecommendations({ selectedBenefits, applicationMethod, productFormPreference, organicCertifiedPreference, products, onBack, pathogenTypes = [], insectTypes = [], getProductImage }) {
   const filters = {
     selectedBenefits,
     applicationMethod,

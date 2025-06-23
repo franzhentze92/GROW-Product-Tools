@@ -13,22 +13,22 @@ const MAIN_GREEN = '#8cb43a';
 function MainLandingPage() {
   const navigate = useNavigate();
   return (
-    <div className="card" style={{ maxWidth: 600, margin: '3rem auto', textAlign: 'center', padding: '3rem 2rem' }}>
+    <div className="card" style={{ maxWidth: 600, margin: '3rem auto', textAlign: 'center', padding: '2rem 1rem' }}>
       <h1 style={{ color: MAIN_GREEN, fontSize: '2.2rem', marginBottom: 16 }}>NTS Product Recommendation Tool</h1>
-      <p style={{ fontSize: '1.15rem', color: '#444', maxWidth: 520, margin: '0 auto 2.5rem auto' }}>
+      <p style={{ fontSize: '1.05rem', color: '#444', maxWidth: 520, margin: '0 auto 2rem auto' }}>
         Choose a category below to get tailored recommendations for your needs.
       </p>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '1.1rem' }}>
         <button
           onClick={() => navigate('/microbes')}
           style={{
-            padding: '2rem',
+            padding: '1rem 1.2rem',
             borderRadius: 16,
             border: '2px solid #e0e0e0',
             background: '#f7faef',
             color: MAIN_GREEN,
             fontWeight: 700,
-            fontSize: '1.25rem',
+            fontSize: '1.1rem',
             cursor: 'pointer',
             boxShadow: '0 2px 12px #8cb43a11',
             transition: 'box-shadow 0.2s, border 0.2s',
@@ -36,37 +36,16 @@ function MainLandingPage() {
           onMouseOver={e => e.currentTarget.style.boxShadow = '0 4px 24px #8cb43a33'}
           onMouseOut={e => e.currentTarget.style.boxShadow = '0 2px 12px #8cb43a11'}
         >
-          🦠 Microbes<br /><span style={{ fontWeight: 400, color: '#444', fontSize: '1.05rem' }}>Find the best microbial products for your crop or soil</span>
+          🦠 Microbes<br /><span style={{ fontWeight: 400, color: '#444', fontSize: '0.98rem' }}>Find the best microbial products for your crop or soil</span>
         </button>
-        
-        <button
-          onClick={() => navigate('/compatibility')}
-          style={{
-            padding: '2rem',
-            borderRadius: 16,
-            border: '2px solid #e0e0e0',
-            background: '#f7faef',
-            color: MAIN_GREEN,
-            fontWeight: 700,
-            fontSize: '1.25rem',
-            cursor: 'pointer',
-            boxShadow: '0 2px 12px #8cb43a11',
-            transition: 'box-shadow 0.2s, border 0.2s',
-          }}
-          onMouseOver={e => e.currentTarget.style.boxShadow = '0 4px 24px #8cb43a33'}
-          onMouseOut={e => e.currentTarget.style.boxShadow = '0 2px 12px #8cb43a11'}
-        >
-          🔬 Product Compatibility<br /><span style={{ fontWeight: 400, color: '#444', fontSize: '1.05rem' }}>Check if products can be safely mixed together</span>
-        </button>
-        
         <div style={{
-          padding: '2rem',
+          padding: '1rem 1.2rem',
           borderRadius: 16,
           border: '2px solid #e0e0e0',
           background: '#f7faef',
           color: MAIN_GREEN,
           fontWeight: 700,
-          fontSize: '1.25rem',
+          fontSize: '1.1rem',
           cursor: 'not-allowed',
           boxShadow: '0 2px 12px #8cb43a11',
           transition: 'box-shadow 0.2s, border 0.2s',
@@ -74,22 +53,22 @@ function MainLandingPage() {
         }}>
           🌱 Growth Promoters
           <br />
-          <span style={{ fontWeight: 400, color: '#444', fontSize: '1.05rem' }}>
+          <span style={{ fontWeight: 400, color: '#444', fontSize: '0.98rem' }}>
             Get recommendations for biostimulants and enhancers
           </span>
           <br />
-          <span style={{ fontWeight: 700, color: '#8cb43a', fontSize: '1rem', marginTop: '0.5rem', display: 'inline-block' }}>
+          <span style={{ fontWeight: 700, color: '#8cb43a', fontSize: '0.95rem', marginTop: '0.5rem', display: 'inline-block' }}>
             (Coming Soon)
           </span>
         </div>
         <div style={{
-          padding: '2rem',
+          padding: '1rem 1.2rem',
           borderRadius: 16,
           border: '2px solid #e0e0e0',
           background: '#f7faef',
           color: MAIN_GREEN,
           fontWeight: 700,
-          fontSize: '1.25rem',
+          fontSize: '1.1rem',
           cursor: 'not-allowed',
           boxShadow: '0 2px 12px #8cb43a11',
           transition: 'box-shadow 0.2s, border 0.2s',
@@ -97,14 +76,38 @@ function MainLandingPage() {
         }}>
           🌾 Fertilisers
           <br />
-          <span style={{ fontWeight: 400, color: '#444', fontSize: '1.05rem' }}>
+          <span style={{ fontWeight: 400, color: '#444', fontSize: '0.98rem' }}>
             Find the best NTS fertiliser products for your needs
           </span>
           <br />
-          <span style={{ fontWeight: 700, color: '#8cb43a', fontSize: '1rem', marginTop: '0.5rem', display: 'inline-block' }}>
+          <span style={{ fontWeight: 700, color: '#8cb43a', fontSize: '0.95rem', marginTop: '0.5rem', display: 'inline-block' }}>
             (Coming Soon)
           </span>
         </div>
+        <button
+          onClick={() => navigate('/compatibility')}
+          style={{
+            padding: '1rem 1.2rem',
+            borderRadius: 16,
+            border: '2px solid #e0e0e0',
+            background: '#f7faef',
+            color: MAIN_GREEN,
+            fontWeight: 700,
+            fontSize: '1.1rem',
+            cursor: 'pointer',
+            boxShadow: '0 2px 12px #8cb43a11',
+            transition: 'box-shadow 0.2s, border 0.2s',
+          }}
+          onMouseOver={e => e.currentTarget.style.boxShadow = '0 4px 24px #8cb43a33'}
+          onMouseOut={e => e.currentTarget.style.boxShadow = '0 2px 12px #8cb43a11'}
+        >
+          🔬 Product Compatibility<br />
+          <span style={{ fontWeight: 400, color: '#444', fontSize: '0.98rem' }}>Check if products can be safely mixed together</span>
+          <br />
+          <span style={{ fontWeight: 700, color: '#ff9800', fontSize: '0.95rem', marginTop: '0.5rem', display: 'inline-block' }}>
+            (Beta Mode)
+          </span>
+        </button>
       </div>
     </div>
   );
