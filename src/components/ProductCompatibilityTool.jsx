@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { compatibilityService } from '../services/compatibilityService';
+import { compatibilityService } from '../services/compatibilityService.js';
 import { loadProducts, searchProducts } from '../data/productDatabase';
 import imageMappingService from '../services/imageMappingService';
 
